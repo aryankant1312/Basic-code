@@ -1,0 +1,66 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+clrscr();
+int a[3][3], b[3][3], c[3][3];
+int i,j,a;
+printf ("Enter the elements of the First Matrix");
+ for (i=0;i<3;i++)
+ { for (j=0;j<3;j++)
+   { scanf ("%d", a[i][j]);
+   }
+ }
+printf ("Enter the elements of the Second Matrix");
+ for (i=0;i<3;i++)
+ { for (j=0;j<3;j++)
+   { scanf ("%d", b[i][j]);
+   }
+ }
+ 
+Switch(a)
+
+Case 1:
+ for (i=0;i<3;i++)
+ { printf("\n");
+   for (j=0;j<3;j++)
+   {  printf( "%d  ",a[i][j] + b[i][j]);
+   }
+ }  
+
+Case 2:
+ for (i=0;i<3;i++)
+ { printf("\n");
+   for (j=0;j<3;j++)
+   {  printf ("%d",a[i][j] - b[i][j]);
+   }
+ }
+
+Case 3:
+ for (i=0;i<3;i++)
+ { printf("\n");
+   for (j=0;j<3;j++)
+   {  printf("%d",a[i][j]/b[i][j]);
+   }
+ }  
+ 
+ 
+Case 4:
+ for (i=0;i<3;i++)
+ { printf("\n");
+   for (j=0;j<3;j++)
+   {  c[i][j] = a[i][j]
+      printf ("%d",c[i][j]);
+   }
+ } 
+ 
+ 
+printf("Enter the number of operation you want to perform-- 1. Addition 
+                                                            2. Subtraction 
+                                                            3. Division
+                                                            4. Transpose  );
+scanf ("%d",&a);                                                            
+                     
+getch();
+}
+   
