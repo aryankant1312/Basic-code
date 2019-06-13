@@ -1,0 +1,101 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+clrscr();
+int a[3][3],b[3][3],c[3][3];
+int i,j,k,a;
+
+printf("\n This file contains Operations of the matrices like  1. Multiplication of 2 matrices
+                                                               
+                                                               2. Getting the upper triangle of the matrice                                                         
+                                                            
+                                                               3. Getting the lowe rtriange of a matrice \n");
+
+printf (" \n Please enter the elements of the first matrice");
+for (i=0; i<3;i++)
+   for (j=0;j<3;j++)
+       printf(" \n Enter element of row %d and column %d",i+1,j+1);
+       scanf ("%d",&a[i][j]);
+printf(" \n PLease enter elements of the second matrice");
+for (i=0;i,3;i++)
+   for (j=0;j<3;j++)
+      printf ("\n Enter the element of row %d and column %d",i+1,j+1");
+      scanf ("%d",&b[i][j]);
+ printf(" the first matrice: \n ")
+ for (i=0; i<3;i++)
+   printf("\n")
+   for (j=0;j<3;j++)
+      printf ("%d",a[i][j])
+      
+  printf(" the second matrice : \n");
+  for (i=0; i<3;i++)
+   printf("\n")
+   for (j=0;j<3;j++)
+      printf("%d",b[i][j]);
+printf (" Choose which operation you want to perform between the the entered matrices:  1. Multiplication of the 2 Matrices
+
+                                                                                        2. Upper traingle of both the given matrices
+                                                                                        
+                                                                                        3. Lower triangle of both the Matrices");
+scanf("%d",&a);
+      
+
+switch(a):
+
+
+
+case 1:
+
+printf( "The multiplication of the two matrices will be performed :");
+for (i=0; i<3;i++)
+   for (j=0;j<3;j++)
+      for (k=0;j<3;j++)
+          c[i][j] += a[i][k]*b[j][k]
+ 
+printf ("The Multiplication of the two matrices is:");
+for (i=0; i<3;i++)
+   printf("\n") 
+   for (j=0;j<3;j++)
+       print ("%d",c[i][j]);
+  
+  
+case 2:
+
+printf (" The upper triangle of the first matrice:");
+printf ("The upper left triangle : ");
+for (i=0; i<2;i++)
+   printf(" \n");
+   for (j=0;j<2;j++)
+     if ( i !=j):
+         printf ("%d",a[i][j]);
+         
+
+printf ("\n The upper right triangle:");
+for (i=0; i<2; i++)
+   printf("\n");
+   for (j=1;j<3; j++)
+      if ( i!=j):
+         printf("%d%,a[i][j]);
+
+ 
+case 3:
+
+printf (" The lower triangle of the matrice \n;)
+printf ("The lower left triangle : \n");
+for (i=1; i<3;i++)
+   printf(" \n");
+   for (j=0;j<2;j++)
+     if ( i !=j):
+         printf ("%d",a[i][j]);
+         
+
+printf ("\n The lower right triangle:");
+for (i=1; i<3; i++)
+   printf("\n");
+   for (j=1;j<3; j++)
+      if ( i!=j):
+         printf("%d%,a[i][j]);
+
+
+                                                            
